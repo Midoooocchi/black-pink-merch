@@ -38,6 +38,7 @@
 <style>
     p{
         margin-bottom: 15px;
+        font-size: 16px;
     }
     a{
         color:white !important;
@@ -76,21 +77,7 @@
                                     <a href="/products" class="disable">Products</a>
                                 </li>
 
-                                <li>
-                                    <a class="disable">Features</a>
-                                </li>
-
-                                <li>
-                                    <a class="disable">Blog</a>
-                                </li>
-
-                                <li>
-                                    <a  class="disable">About</a>
-                                </li>
-
-                                <li>
-                                    <a  class="disable">Contact</a>
-                                </li>
+                                
                             </ul>
                         </div>
 
@@ -151,21 +138,7 @@
                         <a href="/products" class="disable">Products</a>
                     </li>
 
-                    <li>
-                        <a  class="disable label1 rs1" >Features</a>
-                    </li>
-
-                    <li>
-                        <a  class="disable">Blog</a>
-                    </li>
-
-                    <li>
-                        <a  class="disable">About</a>
-                    </li>
-
-                    <li>
-                        <a  class="disable">Contact</a>
-                    </li>
+                    
                 </ul>
             </div>
 
@@ -201,9 +174,9 @@
                             </a>
                         </div>
                         <div><br>
-                            <p><h3><%= item.data()['name'] %></h3></p>
-                            <p><h4>Php. <%= item.data()['price'] %></h4></p>
-                            <p><h4><i class="zmdi zmdi-shopping-cart fa-10x">: <%= item.data()['sales_count'] %></i></h4></p>
+                            <p><h5><%= item.data()['name'] %></h5></p>
+                            <p>Php. <%= item.data()['price'] %></p>
+                            <p><i class="zmdi zmdi-shopping-cart fa-10x">: <%= item.data()['sales_count'] %></i></p>
                         </div>
                         
                     </div>
