@@ -56,7 +56,7 @@
         color: pink !important;
     }
     span, button, th, td{
-        font-size:18px !important;
+        font-size:16px !important;
     }
     input[type="number"]{
         display: none;
@@ -190,9 +190,9 @@
                 </div>
             </div>
             <div class="col"><br>
-                <p><h3><b><%= itemData.name %></b></h3></p>
-                <p><h4>PRICE: <b>₱. <%= itemData.price %></b></h4></p>
-                <p><h4>SALES <i class="zmdi zmdi-shopping-cart fa-10x">: <b><%= itemData.sales_count %></b></i></h4></p>
+                <p><h4><b><%= itemData.name %></b></h4></p>
+                <p><h5>PRICE: <b>₱. <%= itemData.price %></b></h5></p>
+                <p><h5>SALES <i class="zmdi zmdi-shopping-cart fa-10x">: <b><%= itemData.sales_count %></b></i></h5></p>
                 <form method="POST" >
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-sm">Quantity: </span>
