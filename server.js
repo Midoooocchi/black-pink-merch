@@ -99,18 +99,7 @@ app.post('/product_details/:item_id',  urlencodedParser, async function(req, res
         "date": current_date,
         "quantity_added": quantity_added,
     });
-
-
-    let item2 = await itemsColl.doc(item_id).get();
-    const sales2 = await db.collection("items/"+item_id+"/sales").get();
-
-    let datas = {
-        "itemData": item2.data(),
-        "item_sales":sales2.docs,
-        item_id: item_id, 
-    }
-    
-    res.render('product_details', datas);
+    res.redirect('/product_details/' +item_id);
 });
 
 app.get('/product_details_edit/:item_id',  async function(req, res) {
