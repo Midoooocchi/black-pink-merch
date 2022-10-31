@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="/images/icons/favicon.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+</head>
+<style>
+    a:hover {
+	color: red !important;
+    cursor: pointer;
+}
+    
+</style>
+<body>
+
+    <body class="animsition">
+
+        <!-- Header -->
+        <header class="header-v3">
+            <!-- Header desktop -->
+            <div class="container-menu-desktop trans-03">
+                <div class="wrap-menu-desktop">
+                    <nav class="limiter-menu-desktop p-l-45">
+
+                        <!-- Logo desktop -->
+                        <a href="#" class="disable logo">
+                            <img src="images/icons/logo-01.png" alt="IMG-LOGO">
+                        </a>
+
+                        <!-- Menu desktop -->
+                        <div class="menu-desktop">
+                            <ul class="main-menu">
+                                <li>
+                                    <a href="/" class="activebutton">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="/products" class="activebutton">Products</a>
+                                </li>
+
+                                <li>
+                                    <a  class="disable">Features</a>
+                                </li>
+
+                                <li>
+                                    <a  class="disable">Blog</a>
+                                </li>
+
+                                <li>
+                                    <a  class="disable">About</a>
+                                </li>
+
+                                <li>
+                                    <a  class="disable">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Icon header -->
+                        <div class="wrap-icon-header flex-w flex-r-m h-full">
+                            <div class="flex-c-m h-full p-r-25 bor6">
+                                <div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11  js-show-cart" data-notify="2">
+                                    <i class="zmdi zmdi-shopping-cart"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-c-m h-full p-lr-19">
+                                <div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
+                                    <i class="zmdi zmdi-menu"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Header Mobile -->
+            <div class="wrap-header-mobile">
+                <!-- Logo moblie -->
+                <div class="logo-mobile">
+                    <a  class="disable"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+                </div>
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
+                    <div class="flex-c-m h-full p-r-5">
+                        <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
+                            <i class="zmdi zmdi-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button show menu -->
+                <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </div>
+            </div>
+
+
+            <!-- Menu Mobile -->
+            <div class="menu-mobile">
+                <ul class="main-menu-m">
+                    <li>
+                        <a href="/" class="disable">Home</a>
+                        <span class="arrow-main-menu-m">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </li>
+
+                    <li>
+                        <a href="/products" class="disable">Products</a>
+                    </li>
+
+                    <li>
+                        <a  class="disable label1 rs1" >Features</a>
+                    </li>
+
+                    <li>
+                        <a  class="disable">Blog</a>
+                    </li>
+
+                    <li>
+                        <a  class="disable">About</a>
+                    </li>
+
+                    <li>
+                        <a  class="disable">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Modal Search -->
+            <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+                <button class="flex-c-m btn-hide-modal-search trans-04">
+                    <i class="zmdi zmdi-close"></i>
+                </button>
+
+                <form class="container-search-header">
+                    <div class="wrap-search-header">
+                        <input class="plh0" type="text" name="search" placeholder="Search...">
+
+                        <button class="flex-c-m trans-04">
+                            <i class="zmdi zmdi-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+
+        
+
+
+        
+
+
+
+        <!-- Slider -->
+        <section class="section-slide">
+            <div class="wrap-slick1 rs2-slick1">
+                <div class="slick1">
+                    <div class="item-slick1 bg-overlay1" style="background-image: url(images/slide-01.jpg);" data-thumb="images/thumb-01.jpg" data-caption="">
+                        <div class="container h-full">
+                            <div class="flex-col-c-m h-full p-t-100 p-b-60 respon5">
+                                <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
+                                    <h2 class="ltext-104 txt-center cl0 p-t-0 p-b-0 respon1">
+                                        Blackpink
+                                    </h2>
+                                </div>
+
+                                <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
+                                    <span class="ltext-202 txt-center cl0 respon2">
+                                        Merchandise
+                                    </span>
+                                </div>
+                                <br> <br>
+                                <div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+                                    <a href="/products" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                                        Shop Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-slick1 bg-overlay1" style="background-image: url(images/slide-02.jpg);" data-thumb="images/thumb-02.jpg" data-caption="">
+                        <div class="container h-full">
+                            <div class="flex-col-c-m h-full p-t-100 p-b-60 respon5">
+                                <div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
+                                    <span class="ltext-202 txt-center cl0 respon2">
+                                        Ice Cream Chillin'
+                                    </span>
+                                </div>
+
+                                <div class="layer-slick1 animated visible-false" data-appear="lightSpeedIn" data-delay="800">
+                                    <h2 class="ltext-104 txt-center cl0 p-t-22 p-b-40 respon1">
+                                        NEW COLLECTION
+                                    </h2>
+                                </div>
+
+                                <div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="1600">
+                                    <a href="/products" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                                        Shop Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-slick1 bg-overlay1" style="background-image: url(images/slide-03.jpg);" data-thumb="images/thumb-03.jpg" data-caption="">
+                        <div class="container h-full">
+                            <div class="flex-col-c-m h-full p-t-100 p-b-60 respon5">
+                                <div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
+                                    <span class="ltext-202 txt-center cl0 respon2">
+                                        New Arrival
+                                    </span>
+                                </div>
+
+                                <div class="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay="800">
+                                    <h2 class="ltext-104 txt-center cl0 p-t-22 p-b-40 respon1">
+                                        PINK VENOM
+                                    </h2>
+                                </div>
+
+                                <div class="layer-slick1 animated visible-false" data-appear="rotateIn" data-delay="1600">
+                                    <a href="/products"  class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                                        Shop Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap-slick1-dots p-lr-10"></div>
+            </div>
+        </section>
+
+
+        <!-- Banner -->
+        <div class="sec-banner bg0 p-t-95 p-b-55">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 p-b-30 m-lr-auto">
+                        <!-- Block1 -->
+                        <div class="block1 wrap-pic-w">
+                            <img src="images/banner-04.jpg" alt="IMG-BANNER">
+
+                            <a  class="disable block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+                                <div class="block1-txt-child1 flex-col-l">
+                                    <span class="block1-name ltext-102 trans-04 p-b-8">
+                                        T-shirt
+                                    </span>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 p-b-30 m-lr-auto">
+                        <!-- Block1 -->
+                        <div class="block1 wrap-pic-w">
+                            <img src="images/banner-05.jpg" alt="IMG-BANNER">
+
+                            <a  class="disable block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+                                <div class="block1-txt-child1 flex-col-l">
+                                    <span class="block1-name ltext-102 trans-04 p-b-8">
+                                        Bags
+                                    </span>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 p-b-30 m-lr-auto">
+                        <!-- Block1 -->
+                        <div class="block1 wrap-pic-w">
+                            <img src="images/banner-07.jpg" alt="IMG-BANNER">
+
+                            <a  class="disable block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+                                <div class="block1-txt-child1 flex-col-l">
+                                    <span class="block1-name ltext-102 trans-04 p-b-8">
+                                        Accessories
+                                    </span>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 p-b-30 m-lr-auto">
+                        <!-- Block1 -->
+                        <div class="block1 wrap-pic-w">
+                            <img src="images/banner-09.jpg" alt="IMG-BANNER">
+
+                            <a  class="disable block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+                                <div class="block1-txt-child1 flex-col-l">
+                                    <span class="block1-name ltext-102 trans-04 p-b-8">
+                                        Photocard
+                                    </span>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 p-b-30 m-lr-auto">
+                        <!-- Block1 -->
+                        <div class="block1 wrap-pic-w">
+                            <img src="images/banner-08.jpg" alt="IMG-BANNER">
+
+                            <a  class="disable block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+                                <div class="block1-txt-child1 flex-col-l">
+                                    <span class="block1-name ltext-102 trans-04 p-b-8">
+                                        Footwear
+                                    </span>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-b-30 m-lr-auto">
+                        <!-- Block1 -->
+                        <div class="block1 wrap-pic-w">
+                            <img src="images/banner-11.jpg" alt="IMG-BANNER">
+
+                            <a  class="disable block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+                                <div class="block1-txt-child1 flex-col-l">
+                                    <span class="block1-name ltext-102 trans-04 p-b-8">
+                                        Badges
+                                    </span>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 p-b-30 m-lr-auto">
+                        <!-- Block1 -->
+                        <div class="block1 wrap-pic-w">
+                            <img src="images/banner-10.jpg" alt="IMG-BANNER">
+
+                            <a  class="disable block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+                                <div class="block1-txt-child1 flex-col-l">
+                                    <span class="block1-name ltext-102 trans-04 p-b-8">
+                                        Official Albums
+                                    </span>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 p-b-30 m-lr-auto">
+                        <!-- Block1 -->
+                        <div class="block1 wrap-pic-w">
+                            <img src="images/banner-09.jpg" alt="IMG-BANNER">
+
+                            <a  class="disable block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+                                <div class="block1-txt-child1 flex-col-l">
+                                    <span class="block1-name ltext-102 trans-04 p-b-8">
+                                        Poster
+                                    </span>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===============================================================================================-->
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/animsition/js/animsition.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/select2/select2.min.js"></script>
+        <script>
+            $(".js-select2").each(function() {
+                $(this).select2({
+                    minimumResultsForSearch: 20,
+                    dropdownParent: $(this).next('.dropDownSelect2')
+                });
+            })
+        </script>
+        <!--===============================================================================================-->
+        <script src="vendor/daterangepicker/moment.min.js"></script>
+        <script src="vendor/daterangepicker/daterangepicker.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/slick/slick.min.js"></script>
+        <script src="js/slick-custom.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/parallax100/parallax100.js"></script>
+        <script>
+            $('.parallax100').parallax100();
+        </script>
+        <!--===============================================================================================-->
+        <script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+        <script>
+            $('.gallery-lb').each(function() { // the containers for all your galleries
+                $(this).magnificPopup({
+                    delegate: 'a', // the selector for gallery item
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    },
+                    mainClass: 'mfp-fade'
+                });
+            });
+        </script>
+        <!--===============================================================================================-->
+        <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/sweetalert/sweetalert.min.js"></script>
+        <script>
+            $('.js-addwish-b2').on('click', function(e) {
+                e.preventDefault();
+            });
+
+            $('.js-addwish-b2').each(function() {
+                var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
+                $(this).on('click', function() {
+                    swal(nameProduct, "is added to wishlist !", "success");
+
+                    $(this).addClass('js-addedwish-b2');
+                    $(this).off('click');
+                });
+            });
+
+            $('.js-addwish-detail').each(function() {
+                var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
+
+                $(this).on('click', function() {
+                    swal(nameProduct, "is added to wishlist !", "success");
+
+                    $(this).addClass('js-addedwish-detail');
+                    $(this).off('click');
+                });
+            });
+
+            /*---------------------------------------------*/
+
+            $('.js-addcart-detail').each(function() {
+                var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
+                $(this).on('click', function() {
+                    swal(nameProduct, "is added to cart !", "success");
+                });
+            });
+        </script>
+        <!--===============================================================================================-->
+        <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+        <script>
+            $('.js-pscroll').each(function() {
+                $(this).css('position', 'relative');
+                $(this).css('overflow', 'hidden');
+                var ps = new PerfectScrollbar(this, {
+                    wheelSpeed: 1,
+                    scrollingThreshold: 1000,
+                    wheelPropagation: false,
+                });
+
+                $(window).on('resize', function() {
+                    ps.update();
+                })
+            });
+            
+        </script>
+        <!--===============================================================================================-->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
