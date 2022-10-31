@@ -113,6 +113,33 @@ app.post('/product_details/:item_id',  urlencodedParser, async function(req, res
     res.render('product_details', datas);
 });
 
+app.get('/product_details_edit/:item_id',  async function(req, res) {
+    let item_id = req.params.item_id;
+    let item = await itemsColl.doc(item_id).get();
+
+    let datas = {
+        "itemData": item.data(),    
+    }
+    
+    res.render('product_details_edit', datas);
+});
+
+app.post('/product_details_edit/:item_id',  urlencodedParser, async function(req, res) {
+    let new_name = req.body.name; 
+    let new_price = req.body.price; 
+    let item_id = req.params.item_id;
+    let item = await itemsColl.doc(item_id).get();
+   
+    db.collection("items").doc(item_id).update({
+        name: new_name,
+        price: new_price
+    }); //UPDATE
+
+    
+    res.redirect('/product_details/' +item_id);
+});
+
+
 
 
 
