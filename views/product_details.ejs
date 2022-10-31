@@ -56,12 +56,8 @@
         color: pink !important;
     }
     span, button, th, td{
-        font-size:16px !important;
-    }
-    input[type="number"]{
-        display: none;
-    }
-    
+        font-size:14px !important;
+    }    
 </style>
 <body>
 <body class="animsition">
@@ -86,18 +82,7 @@
                             <li>
                                 <a href="/products" class="disable">Products</a>
                             </li>
-                            <li>
-                                <a  class="disable">Features</a>
-                            </li>
-                            <li>
-                                <a  class="disable">Blog</a>
-                            </li>
-                            <li>
-                                <a  class="disable">About</a>
-                            </li>
-                            <li>
-                                <a  class="disable">Contact</a>
-                            </li>
+                            
                         </ul>
                     </div>
                     <!-- Icon header -->
@@ -150,18 +135,7 @@
                 <li>
                     <a href="/products" class="disable">Products</a>
                 </li>
-                <li>
-                    <a  class="disable label1 rs1" >Features</a>
-                </li>
-                <li>
-                    <a class="disable">Blog</a>
-                </li>
-                <li>
-                    <a  class="disable">About</a>
-                </li>
-                <li>
-                    <a  class="disable">Contact</a>
-                </li>
+                
             </ul>
         </div>
         <!-- Modal Search -->
@@ -193,13 +167,16 @@
                 <p><h4><b><%= itemData.name %></b></h4></p>
                 <p><h5>PRICE: <b>₱. <%= itemData.price %></b></h5></p>
                 <p><h5>SALES <i class="zmdi zmdi-shopping-cart fa-10x">: <b><%= itemData.sales_count %></b></i></h5></p>
-                <form method="POST" >
+                <button class="input-group-text" ><a href="/product_details_edit/<%=item_id%>" style="color: #495057 !important">Edit Product Information</a></button>
+                <br><form method="POST" >
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-sm">Quantity: </span>
                         
                         <input type="number" class="form-control" aria-label="Sizing example input"  name="quantity" aria-describedby="inputGroup-sizing-sm" required>
                     </div>
                     <button type="submit" class="input-group-text">Add to sales</button>
+
+                    
                 </form>
                 
                 <table class="table table-bordered mt-5">
@@ -215,7 +192,7 @@
                         <% }) %> 
                 </table>
             </div>
-            <div class="col col-xs-52 col-md-4">
+            <div class="col col-xs-52 col-md-3">
                 
             </div>
         </div>
